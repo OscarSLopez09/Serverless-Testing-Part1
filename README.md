@@ -1,21 +1,19 @@
-<h1>JWipe - Disk Sanitization</h1>
+# LevelUp! Lab for Serverless
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
+## Lab Overview And High Level Design
 
-<h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
-<br />
+Let's start with the High Level Design.
 
+An Amazon API Gateway is a collection of resources and methods. For this tutorial, you create one resource (DynamoDBManager) and define one method (POST) on it. The method is backed by a Lambda function (LambdaFunctionOverHttps). That is, when you call the API through an HTTPS endpoint, Amazon API Gateway invokes the Lambda function.
 
-<h2>Languages and Utilities Used</h2>
+The POST method on the DynamoDBManager resource supports the following DynamoDB operations:
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+* Create, update, and delete an item.
+* Read an item.
+* Scan an item.
+* Other operations (echo, ping), not related to DynamoDB, that you can use for testing.
 
-<h2>Environments Used </h2>
+The request payload you send in the POST request identifies the DynamoDB operation and provides necessary data. For example:
 
-- <b>Windows 10</b> (21H2)
+The following is a sample request payload for a DynamoDB create item operation:
 
-<h2>Program walk-through:</h2>
-
-<p align="center">
