@@ -34,5 +34,19 @@ The Dockerfile is a text document that contains all the commands that we’ll us
 5. I checked my work by going to GitHub and they’re successfully uploaded. 
 
 <img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/dockerfile2.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
- 
+
+##
+In this section of the project, I’m going to create the image using the Dockerfile I uploaded. 
+##
+
+1. Open my project in VS code, and right click on the jupiter-website, select integrated terminal. 
+2. Input the following commands: 
+* ls 
+* Docker build –t jupiter . 
+
+<img src="" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+* Docke image ls – to check if the image has been created. 
+
+<img src="" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
