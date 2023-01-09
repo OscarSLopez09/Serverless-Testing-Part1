@@ -17,9 +17,22 @@ In this project, I'm deploying a website using microservices, including the VPC 
 * Create a record set in Route 53.  
 * Register an SSL certificate in AWS certificate manager.  
 * Create an HTTPS Listener for the application load balancer. 
+##
 
-![](Images\asg.PNG)
+The Dockerfile is a text document that contains all the commands that we’ll use to create the container image. 
+##
+1.  To start, I open VS code and select the folder (Docker-project) the repositor clone. Now I’m creating a new folder named: Jupiter-website, and then I create a file: Dockerfile. 
+2. Copy and paste the commands that I’m using to create the Dockerfile to VS code. 
 
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/dockerfile.PNG" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
-The following is a sample request payload for a DynamoDB create item operation:
+3. Once, I checked that all the commands were good I saved them.  
+4. Click on source control tab and commit the changes. 
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/dockerfile1.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+5. I checked my work by going to GitHub and they’re successfully uploaded. 
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/dockerfile2.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+ 
 
