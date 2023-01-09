@@ -19,5 +19,7 @@ In this project, I'm deploying a website using microservices, including the VPC 
 * Create an HTTPS Listener for the application load balancer. 
 
 
+
+
 The following is a sample request payload for a DynamoDB create item operation:
 
