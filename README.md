@@ -1,19 +1,23 @@
-# LevelUp! Lab for Serverless
+# Deploying the jupiter website using microservices!
 
-## Lab Overview And High Level Design
 
-Let's start with the High Level Design.
 
-An Amazon API Gateway is a collection of resources and methods. For this tutorial, you create one resource (DynamoDBManager) and define one method (POST) on it. The method is backed by a Lambda function (LambdaFunctionOverHttps). That is, when you call the API through an HTTPS endpoint, Amazon API Gateway invokes the Lambda function.
+In this project, I'm deploying a website using microservices, including the VPC infrastructure where is going to run. Services used in this project are as follows:
 
-The POST method on the DynamoDBManager resource supports the following DynamoDB operations:
+* Create a Dockerfile. 
+* Create repository on Docker Hub. 
+* Create an Amazon ECR Repository. 
+* Create an Amazon ECS Cluster. 
+* Create a Task Definition. 
+* Create a Service. 
+* Build AWS VPC from scratch.  
+* Create Nat Gateways.  
+* Create Security Groups. 
+* Create application load balancer.  
+* Create a record set in Route 53.  
+* Register an SSL certificate in AWS certificate manager.  
+* Create an HTTPS Listener for the application load balancer. 
 
-* Create, update, and delete an item.
-* Read an item.
-* Scan an item.
-* Other operations (echo, ping), not related to DynamoDB, that you can use for testing.
-
-The request payload you send in the POST request identifies the DynamoDB operation and provides necessary data. For example:
 
 The following is a sample request payload for a DynamoDB create item operation:
 
