@@ -50,3 +50,27 @@ In this section of the project, I’m going to create the image using the Docker
 
 <img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/create1.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
+##
+
+In this section of the project, I’m going to push the image to the Docker Hub repository. 
+##
+
+I already created a Docker Hub account, and on the account, I created a repo: Jupiter. 
+
+1. Open my project in VS code, and right click on the jupiter-website, select integrated terminal. 
+2. Login to Docker Hub with the following Command: 
+* Docker login –u raphinha022 
+* Input the password  
+* Docker image ls  
+* Docker tag jupiter raphinha022/jupiter 
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/ecr0.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+* Docker push raphinha022/jupiter 
+* Go to Docker Hub and verify the image was uploaded.
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/ecr.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+
+
+
