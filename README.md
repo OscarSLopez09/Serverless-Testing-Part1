@@ -18,7 +18,7 @@ In this project, I'm deploying a website using microservices, including the VPC 
 * Register an SSL certificate in AWS certificate manager.  
 * Create an HTTPS Listener for the application load balancer. 
 
-
+![](Images\asg.PNG)
 
 
 The following is a sample request payload for a DynamoDB create item operation:
