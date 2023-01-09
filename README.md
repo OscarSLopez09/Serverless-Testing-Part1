@@ -44,9 +44,9 @@ In this section of the project, I’m going to create the image using the Docker
 * ls 
 * Docker build –t jupiter . 
 
-<img src="" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/create.PNG?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 * Docke image ls – to check if the image has been created. 
 
-<img src="" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/create1.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
