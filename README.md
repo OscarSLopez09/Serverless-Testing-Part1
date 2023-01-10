@@ -126,5 +126,119 @@ On AWS ECR I verify that the container image has been updated.
 
 <img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/ecr02.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
+##
+In this stage of the project, I’m going to create the Network VPC that is going to use microservices. I’m going to create a three-tier architecture. In the first tier the public subnet: Public Subnet AZ1 and Public Subnet AZ2. On the second tier: Private App subnet AZ1 and Private Subnet AZ2 and on the third tier: Private Data subnet AZ1 and Private Data Subnet AZ2. The subnets are going to be created in two availability zones: US-East-1A and US-East-1B. Additionally, an internet gateway and two routes table are being created to route traffic. 
+##
+
+On the AWS console look for VPC, then I select the N Virginia US region. 
+
+* VPC Dashboard select: create VPC  
+* Resources to create: VPC only  
+* Name tag: Dev VPC  
+* IPv4 CIDR: 10.0.0.0/16  
+* Tenancy: Default  
+* Click create VPC 
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/vpc0.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+ 
+After the VPC has been created, I select acitons and edit VPC settings. On the DNS settings, I selected: Enabled DNS Hostnames and save it.  
+
+## Internet Gateway creation:  
+
+* On VPC Dashboard select Internet Gateways  
+* Name tag: Dev IG  
+* Select Create internet gateway 
+* Internet Gateway is attached to VPC by clicking on attach to VPC button.  
+* Available VPCs - select Dev VPC and click on Attach Internet gateway. 
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/vpc01.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+In this section, I'm going to create two public subnets - Public Subnet AZ1 and Public Subnet AZ2. The public subnet is going to hold the Nat Gateways. 
+
+## Public Subnets creation: 
+  
+* On the VPC Dashboard select Subnets and click create subnet 
+* Create subnet VPC: Dev VPC  
+* Subnet name: Public Subnet AZ1  
+* Availability zone: US East N Virginia/ us-east-1a  
+* IPv4 CIDR: 10.0.0.0/24  
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/vpc02.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+* Click create Subnet 
+* Create subnet VPC: Dev VPC 
+* Subnet name: Public Subnet AZ2  
+* Availability zone: US East N Virginia/ us-east-1b  
+* IPv4 CIDR: 10.0.1.0/24  
+* Click create Subnet 
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/vpc03.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+I need to create a route table, With this RT I'm going to route traffic to the internet from the public subnets. The route tables are going to have a destination of 0.0.0.0/0 - target: Internet Gateway. Also, I associated the public subnets with the Public route table.  
+
+To create route table - go to VPC dashboard and select create route tables.
+ 
+## Route table settings:  
+
+* Name: Public RT  
+* VPC: Dev VPC  
+* Click Create route table 
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/vpc04.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
+
+* Click on routes – click Edit routes and click on Add routes  
+* Destination: 0.0.0.0/0  
+* Target: Internet Gateway (Dev IG)  
+* Click Save changes  
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/vpc04a.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+
+
+We need to associate the public subnets with the Route table.  
+
+* Select Subnets association and click on Edit subnet association.  
+* Available Subnets: Public Subnet AZ1 and Public Subnet AZ2, select the two subnets.  
+* Click Save association. 
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/vpc04b.PNG?raw=true" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+Private subnets for this project: Priave App Subnet AZ1, Private Subnet AZ1, Private Data Subnet AZ1, and Private Data Subnet AZ2. The Private App Subnet are going to hold the Webserver and the Private Data Subnets are going to hold the Database instance. All AZ1 subnets are created on the US-East-1A and all the AZ2 subnets are created on the Us-East-1B AZ. 
+
+* Click create Subnet:
+* Create subnet VPC: Dev VPC  
+* Subnet name: Private App Subnet AZ1  
+* Availability zone: US East N Virginia/ us-east-1a  
+* IPv4 CIDR: 10.0.2.0/24  
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/vpc05.PNG?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+* Click create Subnet 
+* Create subnet VPC: Dev VPC  
+* Subnet name: Private App Subnet AZ2  
+* Availability zone: US East N Virginia/ us-east-1b  
+* IPv4 CIDR: 10.0.3.0/24 
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/vpc06.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+* Click create Subnet 
+* Create subnet VPC: Dev VPC  
+* Subnet name: Private Data Subnet AZ1  
+* Availability zone: US East N Virginia/ us-east-1a  
+* IPv4 CIDR: 10.0.4.0/24  
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/vpc07.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+* Click create Subnet 
+* Create subnet VPC: Dev VPC  
+* Subnet name: Private Data Subnet AZ2  
+* Availability zone: US East N Virginia/ us-east-1b  
+* IPv4 CIDR: 10.0.5.0/24  
+* Click create Subnet 
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/vpc08.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+ 
+ 
 
 
