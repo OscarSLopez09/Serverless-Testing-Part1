@@ -105,5 +105,26 @@ ECR Repository creation:
 
 <img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/push3.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
+On AWS console, I look for ECR and veryfied that the repository had been created.
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/ecr0.PNG" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+##
+The ECR repository has been created and now I’m going to push the container image to it. 
+##
+
+1. Open my project folder in VS code. 
+2. Run the following commands: 
+* docker image ls 
+* aws ecr get-login-password | docker login –username AWS –password-stdin URI ID 
+* docker push URI ID 
+
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/ecr01.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+On AWS ECR I verify that the container image has been updated.
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/ecr02.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
 
 
