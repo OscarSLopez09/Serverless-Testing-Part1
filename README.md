@@ -71,6 +71,39 @@ I already created a Docker Hub account, and on the account, I created a repo: Ju
 
 <img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/ecr.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
+##
+
+The next step that I would do is to push the container image that I created to ECR in AWS. The AWS ECR is like Docker Hub, a service that allows the storage of container images on AWS. 
+To push the container image, I would create an IAM user with programmatic access to push the container images to ECR. Once we have pushed the container image, I will use it to run Fargate containers. 
+##
+
+## IAM user creation: 
+1. On AWS console look for IAM. 
+2. Go to users, add users. 
+3. Username: SadioMane, select access key programmatic access.
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/push.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+4. Set permissions, select Attach existing policies directly. 
+5. Select Administrtor access and next. 
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/push1.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+6. Create user and download the .CSV file. 
+
+I need to configure the keys on my PC. 
+
+1. Open CMD and type: 
+* aws configure 
+* input the access key ID and Secret key ID. 
+* Default region. 
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/push2.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+ 
+ECR Repository creation: 
+* aws ecr create-repository –repository-name jupiter –region us-east-1 
+
+<img src="https://github.com/OscarSLopez09/Deploy-Website-with-microservices/blob/main/Images/push3.PNG?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
 
 
