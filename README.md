@@ -9,3 +9,12 @@ Once the news and the sentiment are stored in Dynamo DB, a user can query news b
 Also, we're creating a rule on Cloudwatch to trigger the Lambda function. 
 
 <img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/Capture.PNG" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+#The AWS services used in this project:
+
+*AWS Lambda
+*Amazon Comprehend
+*Dynamo DB
+*Amazon API Gateway
+*AWS Cloudwatch
+
+
