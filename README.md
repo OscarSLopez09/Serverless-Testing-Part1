@@ -18,4 +18,8 @@ Also, we're creating a rule on Cloudwatch to trigger the Lambda function.
 * Amazon API Gateway
 * AWS Cloudwatch
 
+Before we jump into the actual code, we have one pre-requisite. We get all the top news stories from the website - newsapi.org.
+To call news API, we need to get an API key from them.
+First, we go to https://newsapi.org and create a login account using your email, then select Get API Key.
+The API Key and the account is free.
 
