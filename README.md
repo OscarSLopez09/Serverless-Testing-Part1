@@ -7,3 +7,5 @@ So, one thing to keep in mind.
 Previously, you could run your own Python program on your machine learning program in any programming language to determine the news sentiment. Amazon created the service Amazon Comprehend, where you can pass text and determine a sentiment. Then, the news will be stored including the sentiment in Dynamo DB.
 Once the news and the sentiment are stored in Dynamo DB, a user can query news by sentiment (e.g., positive, negative, neutral).
 Also, we're creating a rule on Cloudwatch to trigger the Lambda function. 
+
+<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/Capture.PNG" height="70%" width="70%" alt="Disk Sanitization Steps"/>
