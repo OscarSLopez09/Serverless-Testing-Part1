@@ -22,4 +22,6 @@ Before we jump into the actual code, we have one pre-requisite. We get all the t
 To call news API, we need to get an API key from them.
 First, we go to https://newsapi.org and create a login account using your email, then select Get API Key.
 The API Key and the account is free.
+##
+
 
