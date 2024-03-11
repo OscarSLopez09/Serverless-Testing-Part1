@@ -27,6 +27,9 @@ The API Key and the account is free.
 
 Once you get the API we're going to be able to make calls to the API from the website newsapi.org
 
+First, I'm going to build the Lambda function that is going to be used as the frontend. The lambda is going to be making call to News API 
+and Amazon Comprehend service to get the sentiment, then is going to inserted in DynamoDB.
+
 
 
 
