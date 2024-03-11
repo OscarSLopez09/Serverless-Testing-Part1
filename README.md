@@ -24,6 +24,7 @@ First, we go to https://newsapi.org and create a login account using your email,
 The API Key and the account is free.
 
 <img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/newsapi.PNG" height="70%" width="70%" alt="Disk Sanitization Steps"/>
-##
+
+
 
 
