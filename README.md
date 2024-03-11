@@ -8,7 +8,7 @@ Previously, you could run your own Python program on your machine learning progr
 Once the news and the sentiment are stored in Dynamo DB, a user can query news by sentiment (e.g., positive, negative, neutral).
 Also, we're creating a rule on Cloudwatch to trigger the Lambda function. 
 
-<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/Capture.PNG" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/Capture.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 # The AWS services used in this project:
 
@@ -23,7 +23,7 @@ To call news API, we need to get an API key from them.
 First, we go to https://newsapi.org and create a login account using your email, then select Get API Key.
 The API Key and the account is free.
 
-<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/newsapi.PNG" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/newsapi.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 
