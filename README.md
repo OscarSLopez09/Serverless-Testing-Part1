@@ -126,7 +126,8 @@ def insertDynamo(sentiment,newsTitle,timestamp):
 * Verify that zip file is created successfully
 <img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda05.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-* After running the AWS command I move to Lambda to verify the function
+* After running the AWS commands check the function on the AWS lambda console
+<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda06.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 Proceed to create Dynamo DB table
 On AWS console look for DynamoDB service.
