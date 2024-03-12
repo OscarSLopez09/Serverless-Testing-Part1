@@ -33,14 +33,14 @@ and Amazon Comprehend service to get the sentiment, then is going to inserted in
 
 I'm going to code witch Cloud9 IDE. on the AWS console under service look for Cloud9 and select start environment and click on open.
 
-* Create a directory with: mkdir NewsAPIReader
+* Create a directory with - mkdir NewsAPIReader
 * Change directory -  cd NewsAPIReader
 * Check the directory - ls 
 * Create the lambda file using python - nano lambda_function.py
 Once the editor is open I paste the code to it
-I verify that the file was created - ls -lthr
-I decided to install the requests external dependencies on the file - pip install requests -t *
-I zip all the files to uploaded to AWS Lambda - zip -r lambda.zip *
+Verify that the file was created - ls -lthr
+Decided to install the requests external dependencies on the file - pip install requests -t *
+Zip all the files to uploaded to AWS Lambda - zip -r lambda.zip *
 
 
 
