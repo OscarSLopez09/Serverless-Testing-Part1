@@ -112,7 +112,8 @@ def insertDynamo(sentiment,newsTitle,timestamp):
        }
        )
 ```
-  
+<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda01.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 * Verify that the file was created - ls -lthr
 * Install the requests external dependencies on the file - pip install requests -t *
 * Zip all the files to uploaded to AWS Lambda - zip -r lambda.zip *
