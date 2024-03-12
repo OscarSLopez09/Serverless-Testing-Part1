@@ -132,13 +132,25 @@ def insertDynamo(sentiment,newsTitle,timestamp):
 * Click on the NewsReaderAPI function to see the code
 <img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda07.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-Proceed to create Dynamo DB table
-On AWS console look for DynamoDB service.
-Click on tables on left side of the screen, then click on create table
-On table details create name: news
-Create the partition key: sentiment
-Create a sort key: timestamp
-Scroll down and select: Create table
+* Proceed to create Dynamo DB table
+<img src=""80%" width="80%" alt="Disk Sanitization Steps"/>
+
+* On AWS console look for DynamoDB service
+* Click on tables on left side of the screen, then click on create table
+<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda08.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+* On table details create name - news
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+* Create the partition key - sentiment
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+* Create a sort key - timestamp
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+* Scroll down and select - Create table
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 
 
 
