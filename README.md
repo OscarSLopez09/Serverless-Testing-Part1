@@ -122,6 +122,17 @@ def insertDynamo(sentiment,newsTitle,timestamp):
 * Zip all the files to uploaded to AWS Lambda - zip -r lambda.zip *
 <img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda04.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
+* After running the AWS command I move to Lambda to verify the function
+
+Proceed to create Dynamo DB table
+On AWS console look for DynamoDB service.
+Click on tables on left side of the screen, then click on create table
+On table details create name: news
+Create the partition key: sentiment
+Create a sort key: timestamp
+Scroll down and select: Create table
+
+
 
 
 
