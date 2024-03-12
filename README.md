@@ -37,6 +37,8 @@ I'm going to code witch Cloud9 IDE. on the AWS console under service look for Cl
 * Change directory -  cd NewsAPIReader
 * Check the directory - ls 
 * Create the lambda file using python - nano lambda_function.py
+<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda0.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 * Once the editor is open I paste the code to it
 * Verify that the file was created - ls -lthr
 * Install the requests external dependencies on the file - pip install requests -t *
