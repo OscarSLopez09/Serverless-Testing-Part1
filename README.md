@@ -37,10 +37,10 @@ I'm going to code witch Cloud9 IDE. on the AWS console under service look for Cl
 * Change directory -  cd NewsAPIReader
 * Check the directory - ls 
 * Create the lambda file using python - nano lambda_function.py
-Once the editor is open I paste the code to it
-Verify that the file was created - ls -lthr
-Decided to install the requests external dependencies on the file - pip install requests -t *
-Zip all the files to uploaded to AWS Lambda - zip -r lambda.zip *
+* Once the editor is open I paste the code to it
+* Verify that the file was created - ls -lthr
+* Install the requests external dependencies on the file - pip install requests -t *
+* Zip all the files to uploaded to AWS Lambda - zip -r lambda.zip *
 
 
 
