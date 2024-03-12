@@ -121,6 +121,8 @@ def insertDynamo(sentiment,newsTitle,timestamp):
 <img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda03.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 * Zip all the files to uploaded to AWS Lambda - zip -r lambda.zip *
 <img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda04.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+* Verify that zip file is created successfully
+<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda05.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 * After running the AWS command I move to Lambda to verify the function
 
