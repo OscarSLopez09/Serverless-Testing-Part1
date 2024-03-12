@@ -120,6 +120,7 @@ def insertDynamo(sentiment,newsTitle,timestamp):
   
 <img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda03.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 * Zip all the files to uploaded to AWS Lambda - zip -r lambda.zip *
+<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda04.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 
