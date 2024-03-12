@@ -140,16 +140,13 @@ def insertDynamo(sentiment,newsTitle,timestamp):
 <img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda08.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 * On table details create name - news
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
 * Create the partition key - sentiment
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
 * Create a sort key - timestamp
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda09.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 * Scroll down and select - Create table
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda10.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda11.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 
