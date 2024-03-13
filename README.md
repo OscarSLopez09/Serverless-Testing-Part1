@@ -133,8 +133,6 @@ def insertDynamo(sentiment,newsTitle,timestamp):
 <img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda07.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 * Proceed to create Dynamo DB table
-<img src=""80%" width="80%" alt="Disk Sanitization Steps"/>
-
 * On AWS console look for DynamoDB service
 * Click on tables on left side of the screen, then click on create table
 <img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda08.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
