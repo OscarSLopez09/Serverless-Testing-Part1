@@ -146,7 +146,7 @@ def insertDynamo(sentiment,newsTitle,timestamp):
 <img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda10.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://github.com/OscarSLopez09/Lambda-Serverless-App/blob/main/Images/lambda11.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-After the Dynamo DB table is create I will continue on the Second part of the project where I create the Cloudwatch rule and the backend Lambda function
+After the Dynamo DB table is create I will continue on the Second part of the project where I create the Cloudwatch rule and the backend Lambda function.
 
 
 
