@@ -29,7 +29,7 @@ Once you get the API we're going to be able to make calls to the API from the we
 #
 
 First, I'm going to build the Lambda function that is going to be used as the frontend. The lambda is going to be making call to News API 
-and Amazon Comprehend service to get the sentiment, then is going to inserted in DynamoDB.
+and Amazon Comprehend service to get the sentiment, then is going to be inserted in DynamoDB.
 
 I'm going to code witch Cloud9 IDE. on the AWS console under service look for Cloud9 and select start environment and click on open.
 
