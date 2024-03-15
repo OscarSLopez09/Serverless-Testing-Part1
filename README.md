@@ -25,7 +25,8 @@ so, I change the timeout to allow time for the function to run properly.
 * On the lambda code source, click on test
 <img src="https://github.com/OscarSLopez09/Serverless-Testing-Part1/blob/main/Images/testingpart02.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-* On the Test section select create a test event -Even1
+* On the Test section select create New event
+* On event name type -Even1
 * On the event JSON section type - {"action":"insert news"}
 * Click on save
 <img src="https://github.com/OscarSLopez09/Serverless-Testing-Part1/blob/main/Images/testingpart103.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
