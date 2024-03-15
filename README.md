@@ -32,16 +32,16 @@ so, I change the timeout to allow time for the function to run properly.
 <img src="https://github.com/OscarSLopez09/Serverless-Testing-Part1/blob/main/Images/testingpart103.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 * Click on Test
-<img src="https://github.com/OscarSLopez09/Serverless-Testing-Part1/blob/main/Images/testingpart104.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/OscarSLopez09/Serverless-Testing-Part1/blob/main/Images/testingpart104.PNG" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
 * After the Executing function succeeded - click on details
 * Verify the results on the section below
-<img src="https://github.com/OscarSLopez09/Serverless-Testing-Part1/blob/main/Images/testingpart105.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/OscarSLopez09/Serverless-Testing-Part1/blob/main/Images/testingpart105.PNG" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
 * Go to the AWS DynanoDB console and select the table - news
 * Click on the refresh to check the results
 * The Sentiment with the news are being store
-<img src="https://github.com/OscarSLopez09/Serverless-Testing-Part1/blob/main/Images/testingpart106.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/OscarSLopez09/Serverless-Testing-Part1/blob/main/Images/testingpart106.PNG" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
 
 
