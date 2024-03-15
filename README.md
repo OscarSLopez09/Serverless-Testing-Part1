@@ -21,6 +21,7 @@ By default, Lambda Timeout is 3 seconds and is going to time out the function be
 so, I change the timeout to allow time for the function to run properly.
 
 <img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 ## Test Event
 
 * On the lambda code source, click on test
@@ -30,7 +31,10 @@ so, I change the timeout to allow time for the function to run properly.
 * Event JSON section type - {"action":"insert news"}
 * Click on save
 <img src="https://github.com/OscarSLopez09/Serverless-Testing-Part1/blob/main/Images/testingpart103.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 * Click on Test
+<img src="https://github.com/OscarSLopez09/Serverless-Testing-Part1/blob/main/Images/testingpart104.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 * After the Executing function succeeded - click on details
 * Verify the results on the section below
 * Go to the AWS DynanoDB console and select the table - news
