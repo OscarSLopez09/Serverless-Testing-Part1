@@ -1,4 +1,4 @@
-# Let's start with a high-level overview.
+## Lab Overview And High Level Design
 
 In this section of the project I'm going to create a test event and verify if the Lambda function is actually making the calls to News API
 and storing the results on Dynamo DB.
