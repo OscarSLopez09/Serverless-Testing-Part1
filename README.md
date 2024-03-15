@@ -15,6 +15,8 @@ the lambda code source open.
 * On basic settings I'm going to Timeout and change the time to 2 minutes
 * On execution role, select Use an existing role - DynamoDB_Comprehend
 * Click save
+<img src="https://github.com/OscarSLopez09/Serverless-Testing-Part1/blob/main/Images/testingpart101.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 By default, Lambda Timeout is 3 seconds and is going to time out the function before stops running
 so, I change the timeout to allow time for the function to run properly.
 
