@@ -3,6 +3,16 @@
 In this section of the project I'm going to create a test event and verify if the Lambda function is actually making the calls to News API
 and storing the results on Dynamo DB.
 
+This is part 2 of the project, links to the other parts below:
+
+- [Part 1 Lambda Serverless app ](https://github.com/OscarSLopez09/Lambda-Serverless-App)
+- [Part 3 Creating the backend lambda](https://github.com/OscarSLopez09/Lambda-Serverless-App-Part2)
+- [Part 4 Creating API Gateway ](https://github.com/OscarSLopez09/Serverless-App-Part2-API-GW)
+- [Part 5 Creating CloudWatch event](https://github.com/OscarSLopez09/Serverless-Cloudwatch-Rule)
+- [Part 6 Implementing security with API keys ](https://github.com/OscarSLopez09/Lambda-Serverless-App-Security)
+
+
+
 ## Cofiguring Timeout on Lambda
 
 First, I open the AWS consol and look for Lambda, on the lambda Console I click on the function NewsReaderAPI
@@ -42,6 +52,10 @@ so, I change the timeout to allow time for the function to run properly.
 * Click on the refresh to check the results
 * The Sentiment with the news are being store
 <img src="https://github.com/OscarSLopez09/Serverless-Testing-Part1/blob/main/Images/testingpart106.PNG" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+Continuing the project in part 3:
+
+- [Part 3 Creating the backend lambda](https://github.com/OscarSLopez09/Lambda-Serverless-App-Part2)
 
 
 
